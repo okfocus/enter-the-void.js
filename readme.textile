@@ -1,4 +1,4 @@
-h1. oktype by OKFocus
+h1. OKType by OKFocus
 
 p. OKType is a highly customizable jQuery plugin that allows for animation of typogragphy styles on the web.
 
@@ -34,7 +34,7 @@ p. The following options are available to you:
 |weight|alternates the font weight by toggling or selecting at random (a string - 'toggle' or 'random')|null|
 |minSize|the minimum desired size for the type (an int)|null|
 |maxSize|the maximum desired size for the type (an int)|null|
-|randomColor|randomizes type color (a boolean)sets the size of the shadow in pixels|false|
+|randomColor|randomizes type color (a boolean)|false|
 |randomDecoration|Random from array of text-decoration rules (a boolean)|false|
 |interval|the speed of our animation in milliseconds (an int)|100|
 |toggleCase|randomizes capitalization and lowercase of type (a boolean)|false|
