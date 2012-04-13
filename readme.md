@@ -10,27 +10,23 @@ enter-the-void.js depends on jQuery (> v1.4).
 
 enter-the-void.js should be bound to elements that contains type (headers, paragraphs, spans, etc).
 
-Apply enter-the-void.js to an element on your webpage like so:
+Apply enter-the-void.js to an element on your webpage like so, within a ```<script>``` tag:
 
 ``` js
-<script>
   $(document).ready(function(){
       $('h1').oktype();  
   });
-</script>
 ```
 
 When you hover on an `<h1>`, you'll now see the enter-the-void.js changing the type style. To make a more interesting animation, add an option or two:
 
 ``` js
-<script>
   $(document).ready(function(){
       $('h1').oktype({
                randomColor: true,
                randomDecoration: true
              });
   });
-</script>
 ```
 
 ### Options
