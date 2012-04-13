@@ -1,0 +1,351 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>
+EnterTheVoid.js by OKFocus
+</title>
+  <meta charset='utf-8'>
+  <meta property="og:title" content="OKText" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://okfoc.us/oktext/" />
+  <meta property="og:image" content="http://okfoc.us/assets/images/XXXX.png" />
+  <meta property="og:site_name" content="OKFocus" />
+  <meta property="fb:admins" content="34601449,13005337,100001923956223" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script src="src/jquery.js"></script>
+<script src="src/oktype.js"></script>
+<style>
+   body {
+      margin: 20px;
+      background: url('http://okfoc.us/okzoom/img/photocopy.png');
+      background-attachment:fixed;
+      background-position:top center;
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+      color: #333;
+    }
+    #container {
+      width: 600px;
+      margin: 0 auto;
+    }
+    ul#sidebar {
+      display: inline-block;
+      margin: 15px 10px 0 0; padding: 0;
+      vertical-align: top;
+      width: 120px;
+    }
+    ul#sidebar li {
+      list-style-type: none;
+    }
+    a {
+      color #00f;
+    }
+    table {
+      margin-top: -10px;
+    }
+    th {
+      text-align: left;
+      vertical-align: top;
+      font-weight: normal;
+      padding-right: 10px;
+      color: #000;
+      text-decoration:underline;
+    }
+    td {
+      vertical-align: top;
+      padding-left: 0;
+      padding-right: 10px;
+      color: #555;
+    }
+    td b {
+      color: #444;
+    }
+    #example1 {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: #ddd;
+      margin: 0 20px;
+      z-index: -1;
+    }
+    #example2 {
+      display: inline-block;
+      width: 300px;
+    }
+    #example3 {
+      display: inline-block;
+    }
+    #example3 a:hover {
+      color: red !important;
+      text-shadow: none !important;
+    }
+    #ok {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+      background: #f4f0f8 url(social_media_icon_transparent.png);
+      background-position: center center;
+      background-size: cover;
+      border-radius:50px;
+    }
+    h1 {
+      font-size: 72px;
+      line-height: 12px;
+      margin-left: 20px;
+      font-weight: bold;
+      font-style: italic;
+      display: inline-block;
+      color: #444;
+    }
+    #content {
+      display: inline-block;
+      width: 600px;
+      vertical-align: top;
+    }
+    pre {
+      border: 1px solid #ddd;
+      background: rgb(238,238,238);
+      background: rgba(238,238,238,0.5);
+      font-size: 12px;
+      line-height: 15px;
+      padding: 5px 0 5px 10px;
+      width: 475px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    pre#license {
+      width: auto;
+      margin: 0;
+      padding: 10px;
+    }
+    pre#methods {
+      width: auto;
+      padding: 10px;
+    }
+    pre a {
+      color: #00f;
+    }
+    header img {padding-bottom:15px;margin-top:10px;max-width:200px;height:33px;}
+    h2{text-transform:uppercase;font-size:15px;letter-spacing:6px;margin-bottom:20px;margin-top:-10px;font-style:italic;font-family: Comic Sans MS, cursive;font-weight:100;color:#333;-webkit-transform: rotate(-1deg);-moz-transform: rotate(-1deg); }
+    #rapper p{
+    cursor:pointer;
+    width: 200px;
+vertical-align: middle;
+padding: 0px;
+height:50px;
+float: left;
+}
+#rapper{
+padding-bottom:50px;
+clear:both;
+}
+</style>
+<script>
+  $(document).ready(function(){
+      $('p.default').oktype();
+      $('p.random').oktype({ randomColor: true });
+      $('p.weight').oktype({ weight: true });
+      $('p.randomDecoration').oktype({ randomDecoration: true });
+      $('p.interval').oktype({ interval: 500 });
+      $('p.toggleCase').oktype({ toggleCase : true });
+      $('p.minSpace').oktype({ minSpace : 2 });
+      $('p.maxSpace').oktype({ maxSpace : 10 });
+      $('p.restore').oktype({ restore : false });
+  });
+</script>
+</head>
+
+<body>
+<div id="container">
+  <div id="header">
+    <a href="http://okfoc.us"><header>
+      <!-- img loaded with js -->
+    </header></a>
+    <hr>
+    <script>
+    (function() {
+      // cachebusting or whatever,,
+      var d = new Date(),
+      logo = document.createElement('img'),
+      header = document.getElementsByTagName('header')[0],
+      nav = document.getElementsByTagName('nav')[0];
+      logo.src = 'http://okfoc.us/assets/images/logo.gif?ok=' + d.getTime();
+      logo.id = "logo";
+      header.insertBefore(logo,nav);
+    })();
+    </script>
+</div>
+  <ul id="sidebar">
+  </ul>
+  <div id="content">
+    <h2>EnterTheVoid.js by OKFocus</h2>
+    <p>
+      EnterTheVoid.js is a JQuery plugin that produces a super sweet text effect by cycling through various CSS properties - sorta reminiscent of the <a href="http://www.youtube.com/watch?v=dL0lNGXoP8E">opening</a> of the awesome movie Enter The Void.
+      Simply hover over type elements with the EnterTheVoid.js enabled and see awesome things happen.
+    </p>
+
+    <h3>Usage</h3>
+    <p>
+      The following examples show the several options packaged with OKType. The script on the following examples is as follows :
+    </p>
+
+    <pre>
+  $(document).ready(function(){
+      $('p.default').oktype();
+      $('p.random').oktype({ randomColor: true });
+      $('p.weight').oktype({ weight: true });
+      $('p.randomDecoration').oktype({ randomDecoration: true });
+      $('p.interval').oktype({ interval: 500 });
+      $('p.toggleCase').oktype({ toggleCase : true });
+      $('p.minSpace').oktype({ minSpace : 2 });
+      $('p.maxSpace').oktype({ maxSpace : 10 });
+      $('p.restore').oktype({ restore : false });
+  });</pre>
+
+<div id="rapper">
+<center>
+<p class="default">
+EnterTheVoid.js Default
+</p>
+<p class="random">
+Random Color
+</p>
+<p class="random">
+Weight Variable
+</p>
+<p class="randomDecoration">
+randomDecoration
+</p>
+<p class="interval">
+slower interval, 500
+</p>
+<p class="toggleCase">
+toggleCase
+</p>
+<p class="minSpace">
+minSpace 2
+</p>
+<p class="maxSpace">
+maxSpace 10
+</p>
+<p class="restore">
+restore
+</p>
+</center>
+</div>
+    <h3>Usage</h3>
+    <table id="params" cellspacing="0">
+<tbody><tr>
+<th>option</th>
+		<th>description</th>
+		<th>default</th>
+	</tr>
+<tr>
+<td>weight</td>
+		<td>alternates the font weight by toggling or selecting at random (a string – ‘toggle’ or ‘random’)</td>
+		<td>null</td>
+	</tr>
+<tr>
+<td>minSize</td>
+		<td>the minimum desired size for the type (an int)</td>
+		<td>null</td>
+	</tr>
+<tr>
+<td>maxSize</td>
+		<td>the maximum desired size for the type (an int)</td>
+		<td>null</td>
+	</tr>
+<tr>
+<td>randomColor</td>
+		<td>randomizes type color (a boolean)</td>
+		<td>false</td>
+	</tr>
+<tr>
+<td>randomDecoration</td>
+		<td>Random from array of text-decoration rules (a boolean)</td>
+		<td>false</td>
+	</tr>
+<tr>
+<td>interval</td>
+		<td>the speed of our animation in milliseconds (an int)</td>
+		<td>100</td>
+	</tr>
+<tr>
+<td>toggleCase</td>
+		<td>randomizes capitalization and lowercase of type (a boolean)</td>
+		<td>false</td>
+	</tr>
+<tr>
+<td>minSpace</td>
+		<td>maximum letter-spacing for type (an int)</td>
+		<td>null</td>
+	</tr>
+<tr>
+<td>maxSpace</td>
+		<td>minimum letter-spacing for type (an int)</td>
+		<td>null</td>
+	</tr>
+<tr>
+<td>restore</td>
+		<td>restore style off hover (a boolean)</td>
+		<td>true</td>
+	</tr>
+<tr>
+<td>hover</td>
+		<td>animation on hover, otherwise always animate (a boolean)</td>
+		<td>true</td>
+	</tr>
+</tbody></table>
+ 
+  <h3><a href="https://github.com/okfocus/oktype/zipball/master">Download EnterTheVoid.js</a> or <a href="http://github.com/okfocus/okzoom">Contribute on Github</a><br><br><a href="https://twitter.com/okfocus" class="twitter-follow-button">Follow @okfocus</a>
+	      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>       
+	      <iframe src="//www.facebook.com/plugins/like.php?app_id=220585137996235&amp;href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FOKFocus%2F126395247420599&amp;send=false&amp;layout=button_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:20px; clear:both;background:transparent;" ></iframe>
+     </h3>
+  <h3>License</h3>
+    <pre id="license">
+Copyright © 2011 OKFocus, <a href="http://okfoc.us">http://okfoc.us</a>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+“Software”), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br>
+<img src="http://okfoc.us/assets/images/okshadow.png"style="padding:10px"><img src="http://okfoc.us/okhover/img/OSI-Approved-License.png"style="padding:10px;"></pre>
+  </pre>
+</div>
+    <script type="text/javascript">
+      var _sf_async_config={uid:25485,domain:"okfoc.us"};
+      (function(){
+          function loadChartbeat() {
+              window._sf_endpt=(new Date()).getTime();
+              var e = document.createElement('script');
+              e.setAttribute('language', 'javascript');
+              e.setAttribute('type', 'text/javascript');
+              e.setAttribute('src',
+      (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+      "js/chartbeat.js");
+              document.body.appendChild(e);
+          }
+          var oldonload = window.onload;
+          window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); };
+      })();
+    </script>
+
+
+</body>
+</html>
