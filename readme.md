@@ -98,7 +98,7 @@ The following options are available to you:
   
 ### Run Tests
 
-p. OKFocus tests JavaScript with Jasmine. After cloning this repo simply run:
+OKFocus tests JavaScript with Jasmine. After cloning this repo simply run:
 
 ```
 $ bundle install
