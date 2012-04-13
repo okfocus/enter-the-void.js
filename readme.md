@@ -18,6 +18,7 @@ Apply enter-the-void.js to an element on your webpage like so:
       $('h1').oktype();  
   });
 </script>
+```
 
 When you hover on an `<h1>`, you'll now see the enter-the-void.js changing the type style. To make a more interesting animation, add an option or two:
 
