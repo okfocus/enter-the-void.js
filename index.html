@@ -12,9 +12,7 @@ EnterTheVoid.js by OKFocus
   <meta property="og:site_name" content="OKFocus" />
   <meta property="fb:admins" content="34601449,13005337,100001923956223" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<script src="src/jquery.js"></script>
-<script src="src/oktype.js"></script>
+  <script src="src/oktype.js"></script>
 <style>
    body {
       margin: 20px;
@@ -144,15 +142,10 @@ clear:both;
 </style>
 <script>
   $(document).ready(function(){
-      $('p.default').oktype();
-      $('p.random').oktype({ randomColor: true });
-      $('p.weight').oktype({ weight: true });
-      $('p.randomDecoration').oktype({ randomDecoration: true });
-      $('p.interval').oktype({ interval: 500 });
-      $('p.toggleCase').oktype({ toggleCase : true });
-      $('p.minSpace').oktype({ minSpace : 2 });
-      $('p.maxSpace').oktype({ maxSpace : 10 });
-      $('p.restore').oktype({ restore : false });
+      $('p').oktype({
+         randomColor: true,
+         on: "scroll"
+      });
   });
 </script>
 </head>
