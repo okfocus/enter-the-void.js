@@ -88,7 +88,9 @@
                     $(window).bind({
                         // On scroll
                         scroll: function(e){
-                            base.hoverIn($(base.options.elArray.join()), e.type);
+                            $(base.options.elArray.join()).each(function(index){
+                                base.hoverIn($(this), e.type);
+                            });
                         }
                     });
                 } else {
@@ -102,6 +104,7 @@
         //
         // Takes one argument, the element we are hovering on.
         base.hoverIn = function(el, event){
+            
             // Cache jQuery object
             $self = $(el);
             
@@ -126,14 +129,14 @@
                     base.transform($self);
                 }, base.options.interval);
             } else {
-                timer = window.setTimeout(base.transform($self), 1000);
+                base.transform($self);
             }
         };
 
         // Removes our timeout and CSS class. Will return the element to its prior state unless explicitly stated by the user.
         base.hoverOut = function(){
 
-            if (base.options.on != "scroll") {
+            if (base.options.on != 'scroll') {
                 // Destroy the timeout
                 clearTimeout(timer);
             }
@@ -142,7 +145,7 @@
             if (base.options.hover) self.removeClass('oktype-hovering');
 
             // Sould we restore CSS?
-            if (base.options.restore){
+            if (base.options.restore && base.options.on != 'scroll'){
                 // Restore the element's prior CSS
                 $self.css({
                     'font-family': restore.fontFamily,
