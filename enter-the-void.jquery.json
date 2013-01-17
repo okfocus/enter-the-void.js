@@ -1,0 +1,38 @@
+{
+  "name": "enter-the-void",
+  "version": "1.1.0",
+  "title": "enter-the-void",
+  "description": "A jQuery Plugin that creates a memorable tiled background effect, manipulated by mouse movement.",
+  "homepage": "https://github.com/okfocus/enter-the-void.js",
+  "docs": "https://github.com/okfocus/enter-the-void.js",
+  "demo": "http://okfoc.us/enter-the-void.js",
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://raw.github.com/okfocus/enter-the-void.js/master/license"
+  }],
+  "keywords": ["hover", "text", "flash", "color", "hover", "typography", "okfocus"],
+  "author": {
+    "name": "OKFocus",
+    "url": "https://github.com/okfocus"
+  },
+  "maintainers": [{
+    "name": "Jonathan Vingiano",
+    "url": "https://github.com/jgv"
+  },
+  {
+    "name": "Jules LaPlace",
+    "url": "https://github.com/julescarbon"
+  },
+  {
+    "name": "Ryder Ripps",
+    "url": "https://github.com/ryderr"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/okfocus/enter-the-void.js.git"
+  },
+  "bugs": "https://github.com/okfocus/enter-the-void.js/issues",
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}

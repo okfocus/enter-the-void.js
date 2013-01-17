@@ -1,0 +1,8 @@
+{
+  "name": "enter-the-void.js",
+  "version": "1.0",
+  "main": "./src/enter-the-void.js",
+  "dependencies": {
+    "jquery": ">1.4"
+  }
+}
