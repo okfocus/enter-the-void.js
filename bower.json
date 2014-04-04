@@ -1,0 +1,29 @@
+{
+  "name": "enter-the-void.js",
+  "version": "1.0",
+  "main": "./src/oktype.js",
+  "dependencies": {
+    "jquery": ">1.4"
+  },
+  "homepage": "https://github.com/okfocus/enter-the-void.js",
+  "authors": [
+    "okfocus"
+  ],
+  "description": "Enter The Void",
+  "keywords": [
+    "enterthevoid",
+    "type",
+    "okfocus",
+    "gaspar",
+    "noe"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "spec"
+  ]
+}
